@@ -9,79 +9,120 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
 </head> 
 <body>
-     <section class="bg-[#3C1A24] min-h-screen">
-<nav class="text-white p-6 flex justify-between items-center gap-10 text-[20px] font-sans mr-40"> 
-  <h1 class="text-[30px] font-bold leading-tight ml-40"> 
-    BLACK<br>FRIDAY 
-  </h1> 
-  <nav class="flex flex-row items-center gap-10 text-[24px] text-[#2C221B] text-white uppercase tracking-wider"> 
-    <a href="#" class="transition-colors duration-200 hover:text-[#D08F8F] text-white">Promotions</a> 
-    <a href="#" class="transition-colors duration-200 hover:text-[#D08F8F] text-white">Best Sellers</a> 
-    <a href="#" class="transition-colors duration-200 hover:text-[#D08F8F] text-white">Contact</a> 
-    <a href="#" class="cart relative text-[28px] transition-transform duration-200 hover:scale-110 ml-4"> 
-      🛒 
-    </a> 
+     <section class="bg-[#3C1A24] min-h-screen text-white overflow-hidden">
+  <!-- NAVBAR -->
+  <nav class="w-full px-5 sm:px-8 lg:px-14 xl:px-20 py-6 flex flex-col sm:flex-row justify-between items-center gap-5">
+    <h1 class="text-[24px] sm:text-[28px] lg:text-[30px] font-bold leading-[0.9] tracking-tight">
+      BLACK<br>FRIDAY
+    </h1>
+
+    <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 lg:gap-10 text-[14px] sm:text-[16px] lg:text-[18px] uppercase tracking-wider">
+      <a href="#" class="transition-colors duration-200 hover:text-[#D08F8F]">Promotions</a>
+      <a href="#" class="transition-colors duration-200 hover:text-[#D08F8F]">Best Sellers</a>
+      <a href="#" class="transition-colors duration-200 hover:text-[#D08F8F]">Contact</a>
+      <a href="#" class="text-[23px] sm:text-[26px] transition-transform duration-200 hover:scale-110" aria-label="Shopping cart">🛒</a>
+    </div>
   </nav>
-</nav>
 
+  <!-- HERO -->
+  <div class="max-w-[1280px] mx-auto px-5 sm:px-8 lg:px-14 xl:px-20 pt-8 sm:pt-12 lg:pt-20 pb-14 sm:pb-20">
+    <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-6">
 
-    </nav>
-        <div class="relative">
-            <h2 class=" font-bold text-[180px] text-[#E8E6E3] ml-40 leading-[0.9]">
-                SPECIAL
-            </h2>
-            <h3 class="text-[200px] ml-40  text-[#9D9588] font-['josephsophia'] leading-[0.9] -mt-5 -mb-12 ">
-                Sales
-            </h3>
-                <h4 class=" font-bold text-[180px] text-[#E8E6E3] ml-40 leading-[0.9] -mt-19">
-                    PRICE
-                </h4>
-                <img src="pic.jpg.jpg" alt="" class="w-100 h-auto absolute right-20 top-15 rounded-full object-cover">
-                <button class="bg-[#2C221B] text-white text-[36px] font-medium w-56 h-20 rounded-xl border-2 border-[#D08F8F] ml-60 mt-20 transition-all duration-300 hover:bg-[#D08F8F] hover:text-[#2C221B] hover:border-[#2C221B]">
-                    <a href="#" class="block w-full h-full flex items-center justify-center">See more</a>
-                </button>
-            </div>
+      <!-- LEFT CONTENT -->
+      <div class="relative z-10 text-center lg:text-left">
+        <p class="text-[#D08F8F] text-sm sm:text-base lg:text-lg uppercase tracking-[0.35em] mb-5">
+          Limited Time Offer
+        </p>
+
+        <h2 class="text-[#E8E6E3] text-[58px] sm:text-[82px] md:text-[105px] lg:text-[125px] xl:text-[145px] font-extrabold leading-[0.78] tracking-[-0.06em]">
+          SPECIAL
+        </h2>
+
+        <h3 class="text-[#9D9588] italic font-serif text-[72px] sm:text-[96px] md:text-[120px] lg:text-[135px] xl:text-[155px] leading-[0.75] -ml-1 sm:-ml-2">
+          Sales
+        </h3>
+
+        <div class="flex flex-col sm:flex-row items-center lg:items-end gap-5 sm:gap-7 mt-7">
+          <h4 class="text-[#E8E6E3] text-[58px] sm:text-[76px] md:text-[92px] lg:text-[105px] xl:text-[120px] font-extrabold leading-[0.8] tracking-[-0.05em]">
+            PRICE
+          </h4>
+
+          <div class="text-center sm:text-left pb-1">
+            <p class="text-[#D08F8F] text-3xl sm:text-4xl font-bold">UP TO</p>
+            <p class="text-white text-4xl sm:text-5xl font-extrabold leading-none">60% OFF</p>
+          </div>
+        </div>
+
+        <p class="text-[#D8D2CD] text-sm sm:text-base lg:text-lg leading-7 max-w-xl mx-auto lg:mx-0 mt-8">
+          Discover refined footwear, timeless silhouettes, and exclusive styles
+          curated for a truly luxurious Black Friday experience.
+        </p>
+
+        <a href="#" class="inline-flex items-center justify-center mt-8 bg-[#2C221B] text-white text-base sm:text-lg font-semibold px-9 sm:px-12 py-4 rounded-full border border-[#D08F8F] transition-all duration-300 hover:bg-[#D08F8F] hover:text-[#2C221B] hover:scale-105">
+          Shop the collection
+        </a>
+      </div>
+
+      <!-- RIGHT PRODUCT -->
+      <div class="relative flex justify-center lg:justify-end">
+        <div class="absolute w-[250px] h-[250px] sm:w-[360px] sm:h-[360px] lg:w-[480px] lg:h-[480px] rounded-full bg-[#D08F8F]/10 blur-2xl"></div>
+
+        <div class="relative w-[260px] sm:w-[360px] md:w-[430px] lg:w-[500px] xl:w-[540px] aspect-square rounded-full bg-[#E8E6E3] overflow-hidden shadow-2xl">
+          <img
+            src="pic.jpg.jpg"
+            alt="Black Friday featured product"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <div class="absolute -bottom-2 sm:bottom-4 lg:bottom-8 left-1/2 lg:left-auto lg:right-0 -translate-x-1/2 lg:translate-x-0 bg-[#2C221B] border border-[#D08F8F]/60 px-5 sm:px-7 py-3 sm:py-4 rounded-full shadow-xl">
+          <p class="text-[#D08F8F] text-xs sm:text-sm uppercase tracking-[0.25em]">Black Friday</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<section class="bg-[#0D0D0D] min-h-screen  py-10 relative">
-            <h5 class="text-[#C8C3BC] font-bold text-[70px] text-center">
+<section class="bg-[#0D0D0D] min-h-screen py-8 sm:py-10 relative">
+            <h5 class="text-[#C8C3BC] font-bold text-[40px] sm:text-[52px] md:text-[60px] lg:text-[70px] text-center">
                 Black Friday is here!
             </h5>
             <p class="text-center text-[#C8C3BC]">
-                Step into a season of exceptional style with our exclusive <br>
-                Black Friday collection, where timeless elegance meets irresistible value. <br>
-                 Discover sophisticated heels designed with refined details, <br>
-                 contemporary silhouettes, and effortless glamour—carefully selected <br>
-                 for those who believe the perfect pair can transform an entire look.<br>
-                  Explore our limited-time offers and make every step a statement before<br>
+                Step into a season of exceptional style with our exclusive  
+                Black Friday collection, where timeless elegance meets irresistible value.  
+                 Discover sophisticated heels designed with refined details,  
+                 contemporary silhouettes, and effortless glamour—carefully selected  
+                 for those who believe the perfect pair can transform an entire look. 
+                  Explore our limited-time offers and make every step a statement before 
                    these exclusive styles are gone.
             </p>
             </p>
             </p>
-<div class="flex flex-row items-center justify-between gap-6 w-full max-w-[1200px] mx-auto">
+<div class="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-6 w-full max-w-[1200px] w-full mx-auto">
   
   <!-- Image Container -->
  
 
   <!-- Black Friday Block -->
-  <div class="w-[400px] text-left">
-    <p class="text-[#9D9588] font-['josephsophia'] text-[100px] leading-none">Promotion</p>
-    <p class="text-[#CDC8C2] font-['josephsophia'] text-[140px] leading-none">-40%</p>
-    <div class="h-[150px] w-auto bg-[#30151D] text-center text-[50px] text-[#E8E6E3] flex items-center justify-center">
-      BLACK<br>FRIDAY
+  <div class="w-full md:w-[300px] lg:w-[400px] text-center md:text-left">
+    <p class="text-[#9D9588] font-['josephsophia'] text-[60px] sm:text-[75px] lg:text-[100px] leading-none">Promotion</p>
+    <p class="text-[#CDC8C2] font-['josephsophia'] text-[75px] sm:text-[100px] lg:text-[140px] leading-none">-40%</p>
+    <div class="h-[110px] sm:h-[130px] lg:h-[150px] w-auto bg-[#30151D] text-center text-[30px] sm:text-[40px] lg:text-[50px] text-[#E8E6E3] flex items-center justify-center">
+      BLACK FRIDAY
     </div>
   </div>
 
    <div class="flex-1">
-    <img src="bag.jpg.jpg" alt="Bag" class="block mx-auto h-auto w-[330px]">
+    <img src="bag.jpg.jpg" alt="Bag" class="block mx-auto h-auto w-[220px] sm:w-[280px] lg:w-[330px]">
   </div>
 
   <!-- Cyber Monday Block -->
-  <div class="w-[400px] text-right">
-    <p class="text-[#9D9588] font-['josephsophia'] text-[100px] leading-none">Promotion</p>
-    <p class="text-[#CDC8C2] font-['josephsophia'] text-[140px] leading-none">-20%</p>
-    <div class="h-[150px] bg-[#652B2B] text-center text-[50px] text-white flex items-center justify-center">
-      CYBER<br>MONDAY
+  <div class="w-full md:w-[300px] lg:w-[400px] text-center md:text-right">
+    <p class="text-[#9D9588] font-['josephsophia'] text-[60px] sm:text-[75px] lg:text-[100px] leading-none">Promotion</p>
+    <p class="text-[#CDC8C2] font-['josephsophia'] text-[75px] sm:text-[100px] lg:text-[140px] leading-none">-20%</p>
+    <div class="h-[110px] sm:h-[130px] lg:h-[150px] bg-[#652B2B] text-center text-[30px] sm:text-[40px] lg:text-[50px] text-white flex items-center justify-center">
+      CYBER MONDAY
     </div>
   </div>
 
@@ -93,7 +134,7 @@
 </section>
 
 </section>
-<section class="bg-[#0D0D0D] min-h-screen py-16 px-6 flex flex-col justify-center items-center">
+<section class="bg-[#0D0D0D] min-h-screen py-10 sm:py-16 px-4 sm:px-6 flex flex-col justify-center items-center">
   <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     
     <!-- Left Side: Image Container -->
@@ -110,18 +151,18 @@
       </div>
 
       <!-- Heading -->
-      <h2 class="text-white font-bold text-[42px] sm:text-[48px] leading-tight mb-4">
+      <h2 class="text-white font-bold text-[34px] sm:text-[42px] md:text-[48px] leading-tight mb-4">
         Modern shoes 
       </h2>
 
       <!-- Description -->
       <p class="text-[#A3A3A3] text-[15px] leading-relaxed font-light mb-8">
-        Redefine your everyday style with footwear <br>
-         that blends contemporary design, refined craftsmanship,<br>
-          and effortless sophistication. From elegant <br>
-          silhouettes to distinctive statement pieces, our <br>
-          collection is thoughtfully curated for those <br>
-          who appreciate premium details, confident style,<br>
+        Redefine your everyday style with footwear  
+         that blends contemporary design, refined craftsmanship, 
+          and effortless sophistication. From elegant  
+          silhouettes to distinctive statement pieces, our  
+          collection is thoughtfully curated for those  
+          who appreciate premium details, confident style, 
            and a look that leaves a lasting impression.
       </p>
 
@@ -145,18 +186,18 @@
           up to 20%
         </span>
 
-        <h1 class="mt-10 text-5xl font-bold">
+        <h1 class="mt-10 text-2xl sm:text-3xl sm:text-4xl lg:text-5xl font-bold">
           Lifestyle shoes
         </h1>
 
-        <p class="mt-6 max-w-xl text-lg leading-8 text-gray-300">
-          Discover refined footwear that blends <br>
-          modern design, effortless comfort, and <br>
-           timeless elegance—crafted for every <br>
+        <p class="mt-6 max-w-xl text-base sm:text-lg leading-7 sm:leading-8 text-gray-300">
+          Discover refined footwear that blends  
+          modern design, effortless comfort, and  
+           timeless elegance—crafted for every  
             moment and every style.
         </p>
 
-        <button class="mt-10 rounded-full bg-[#580d22] px-16 py-5 text-xl font-bold text-white">
+        <button class="mt-10 rounded-full bg-[#580d22] px-10 sm:px-14 lg:px-16 py-4 sm:py-5 text-lg sm:text-xl font-bold text-white">
           See more
         </button>
       </div>
@@ -166,7 +207,7 @@
         <img
           src="nm.jpg"
           alt="Lifestyle shoes"
-          class="block w-full h-[500px] object-cover"
+          class="block w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
         />
       </div>
 
@@ -182,7 +223,7 @@
 
     <h2
       class="text-[#e7e2dc]
-             text-5xl md:text-6xl
+             text-4xl sm:text-5xl md:text-6xl
              font-bold
              tracking-tight
              mb-7"
@@ -196,10 +237,10 @@
              leading-[1.6]
              font-medium"
     >
-      Explore our most sought-after styles, carefully curated for <br>
-      their exceptional elegance, modern silhouettes, and sophisticated <br>
-       appeal. From timeless classics to statement-making designs, discover <br>
-        the pairs that continue to define effortless luxury and elevate <br>
+      Explore our most sought-after styles, carefully curated for  
+      their exceptional elegance, modern silhouettes, and sophisticated  
+       appeal. From timeless classics to statement-making designs, discover  
+        the pairs that continue to define effortless luxury and elevate  
         every look. 
     </p>
 
@@ -388,13 +429,13 @@
 <section class="w-full bg-[#0D0D0D] px-5 md:px-8 py-8">
 
   <div
-    class="max-w-[1200px] mx-auto
+    class="max-w-[1200px] w-full mx-auto
            grid grid-cols-1 md:grid-cols-[1.35fr_1fr]
            gap-6"
   >
 
     <!-- LEFT LARGE IMAGE -->
-    <div class="h-[420px] md:h-[575px] overflow-hidden">
+    <div class="h-[320px] sm:h-[450px] md:h-[575px] overflow-hidden">
 
       <img
         src="m.jpg"
@@ -424,7 +465,7 @@
         <!-- Script Heading -->
         <h2
           class="text-[#a99b98]
-                 text-5xl md:text-6xl
+                 text-4xl sm:text-5xl md:text-6xl
                  italic
                  font-serif
                  leading-none
@@ -436,7 +477,7 @@
         <!-- Discount -->
         <div
           class="text-[#eee9e5]
-                 text-6xl md:text-7xl
+                 text-5xl sm:text-6xl md:text-7xl
                  font-extrabold
                  tracking-tight
                  leading-none
@@ -448,7 +489,7 @@
         <!-- Subtitle -->
         <p
           class="text-[#a99b98]
-                 text-2xl md:text-3xl
+                 text-xl sm:text-2xl md:text-2xl sm:text-3xl
                  italic
                  font-serif"
         >
@@ -511,7 +552,7 @@
 
       <h3
         class="text-[#ddd8d2]
-               text-3xl
+               text-2xl sm:text-3xl
                font-bold
                mb-3"
       >
@@ -522,12 +563,12 @@
         class="text-[#cfcac5]
                text-[17px]
                leading-[1.6]
-               max-w-[330px]"
+               max-w-[220px] sm:w-[280px] lg:w-[330px]"
       >
-       We offer fast and reliable delivery on all <br>
-       orders, ensuring your favorite styles <br>
-       arrive safely and beautifully at your <br>
-       doorstep. Every package is carefully <br>
+       We offer fast and reliable delivery on all  
+       orders, ensuring your favorite styles  
+       arrive safely and beautifully at your  
+       doorstep. Every package is carefully  
        prepared to reach you in perfect condition.
       </p>
 
@@ -562,7 +603,7 @@
 
       <h3
         class="text-[#ddd8d2]
-               text-3xl
+               text-2xl sm:text-3xl
                font-bold
                mb-3"
       >
@@ -573,12 +614,12 @@
         class="text-[#cfcac5]
                text-[17px]
                leading-[1.6]
-               max-w-[330px]"
+               max-w-[220px] sm:w-[280px] lg:w-[330px]"
       >
-        We offer hassle-free returns on all <br>
-        purchases, ensuring your satisfaction <br>
-        with every order. If you're not completely <br>
-        happy, our easy return process makes it <br>
+        We offer hassle-free returns on all  
+        purchases, ensuring your satisfaction  
+        with every order. If you're not completely  
+        happy, our easy return process makes it  
         simple to exchange or refund your items.
       </p>
 
@@ -612,7 +653,7 @@
 
       <h3
         class="text-[#ddd8d2]
-               text-3xl
+               text-2xl sm:text-3xl
                font-bold
                mb-3"
       >
@@ -623,12 +664,12 @@
         class="text-[#cfcac5]
                text-[17px]
                leading-[1.6]
-               max-w-[330px]"
+               max-w-[220px] sm:w-[280px] lg:w-[330px]"
       >
-        We accept a variety of secure payment <br>
-        methods, including credit cards, debit <br>
-        cards, and digital wallets, ensuring a <br>
-        smooth and safe checkout experience for <br>
+        We accept a variety of secure payment  
+        methods, including credit cards, debit  
+        cards, and digital wallets, ensuring a  
+        smooth and safe checkout experience for  
         all our customers.
       </p>
 
@@ -643,7 +684,7 @@
 
   <footer
     class="bg-[#512733]
-           px-8 lg:px-16
+           px-5 sm:px-8 lg:px-16
            py-12"
   >
 
@@ -663,7 +704,7 @@
         <div
           class="text-white
                  font-extrabold
-                 text-[30px]
+                 text-[24px] sm:text-[28px] lg:text-[30px]
                  leading-[0.8]
                  tracking-tight"
         >
@@ -679,7 +720,7 @@
 
         <h3
           class="text-[#f0ebe7]
-                 text-3xl
+                 text-2xl sm:text-3xl
                  font-bold
                  mb-5"
         >
@@ -709,7 +750,7 @@
 
         <h3
           class="text-[#f0ebe7]
-                 text-3xl
+                 text-2xl sm:text-3xl
                  font-bold
                  mb-5"
         >
@@ -739,7 +780,7 @@
 
         <h3
           class="text-[#f0ebe7]
-                 text-3xl
+                 text-2xl sm:text-3xl
                  font-bold
                  mb-7"
         >
