@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+<style>html { scroll-behavior: smooth; }</style>
 </head> 
 <body>
      <section class="bg-[#3C1A24] min-h-screen text-white overflow-hidden">
@@ -17,9 +18,9 @@
     </h1>
 
     <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 lg:gap-10 text-[14px] sm:text-[16px] lg:text-[18px] uppercase tracking-wider">
-      <a href="#" class="transition-colors duration-200 hover:text-[#D08F8F]">Promotions</a>
-      <a href="#" class="transition-colors duration-200 hover:text-[#D08F8F]">Best Sellers</a>
-      <a href="#" class="transition-colors duration-200 hover:text-[#D08F8F]">Contact</a>
+      <a href="#promotions" class="transition-colors duration-200 hover:text-[#D08F8F]">Promotions</a>
+      <a href="#bestsellers" class="transition-colors duration-200 hover:text-[#D08F8F]">Best Sellers</a>
+      <a href="#contact" class="transition-colors duration-200 hover:text-[#D08F8F]">Contact</a>
       <a href="#" class="text-[23px] sm:text-[26px] transition-transform duration-200 hover:scale-110" aria-label="Shopping cart">🛒</a>
     </div>
   </nav>
@@ -216,7 +217,7 @@
   </div>
 </section>
   <!-- BESTSELLERS SECTION -->
-<section class="w-full bg-[#2b211b] px-5 sm:px-8 lg:px-10 py-10">
+<section id="bestsellers" class="w-full bg-[#2b211b] px-5 sm:px-8 lg:px-10 py-10">
 
   <!-- Section Heading -->
   <div class="max-w-[900px] mx-auto text-center mb-7">
@@ -426,7 +427,7 @@
 
 </section>
 <!-- PROMOTION SECTION -->
-<section class="w-full bg-[#0D0D0D] px-5 md:px-8 py-8">
+<section id="promotions" class="w-full bg-[#0D0D0D] px-5 md:px-8 py-8">
 
   <div
     class="max-w-[1200px] w-full mx-auto
@@ -716,7 +717,7 @@
 
 
       <!-- CONTACT -->
-      <div>
+      <div id="contact" class="scroll-mt-10">
 
         <h3
           class="text-[#f0ebe7]
